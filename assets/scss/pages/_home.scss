@@ -241,7 +241,7 @@
     .codegSpeciality {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         margin: 25px auto;
         column-gap: 48px;
         flex-wrap: wrap;
@@ -472,6 +472,64 @@ footer {
                 color: #ffffff;
             }
         }
+    }
+}
+
+.voicespItem {
+    border: 1.19px solid #FFFFFF42;
+    color: #0E3868;
+    border-radius: 11px;
+    padding: 37px 17px;
+    max-width: 300px;
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+
+    h2 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 21.43px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #ffffff;
+    }
+
+    h3 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: #ffffff;
+
+        a {
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: #ffffff;
+        }
+    }
+
+    a {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: #ffffff;
     }
 }
 
