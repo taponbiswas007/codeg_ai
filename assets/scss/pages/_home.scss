@@ -579,6 +579,30 @@ footer {
     }
 }
 
+.countrycode {
+    position: absolute;
+    bottom: 9px;
+    left: 10px;
+
+    select {
+        width: fit-content;
+        border: none;
+        background: none;
+        padding: 0;
+        color: #ffffff;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        option{
+            color: #000000;
+        }
+
+    }
+}
+
 @media (max-width: 1440px) {
     .header_wrapper header nav .moreBtn {
         display: block;
