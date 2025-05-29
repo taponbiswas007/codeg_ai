@@ -495,7 +495,7 @@ button {
   background: #0E3868;
   border: 1.19px solid rgba(255, 255, 255, 0.2588235294);
   padding: 30px 16px;
-  width: 316px;
+  max-width: 316px;
   border-radius: 10px;
   margin: 20px auto;
 }
@@ -533,6 +533,36 @@ button {
   text-align: center;
   vertical-align: middle;
   color: #FFFFFF;
+}
+
+.search_results {
+  background: #0E3868;
+  border: 1.19px solid rgba(255, 255, 255, 0.2588235294);
+  max-width: 984px;
+  border-radius: 10px;
+  margin: 25px auto;
+}
+.search_results p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  text-align: left;
+  max-width: unset;
+}
+
+.gitlink {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
 }
 
 .input_feild {
@@ -724,6 +754,20 @@ footer ul li a {
   color: #ffffff;
 }
 
+.search_header {
+  width: 100%;
+}
+.search_header h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  text-align: center;
+}
+
 @media (max-width: 1440px) {
   .header_wrapper header nav .moreBtn {
     display: block;
@@ -798,6 +842,9 @@ footer ul li a {
 @media (max-width: 540px) {
   .searchinput input {
     width: 390px;
+  }
+  .search_results p {
+    font-size: 14px;
   }
 }
 @media (max-width: 420px) {
