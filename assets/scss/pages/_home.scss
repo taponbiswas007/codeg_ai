@@ -1,0 +1,75 @@
+.header_wrapper {
+    padding: 29px 0;
+    background: #0E3868;
+    border-bottom: 1px solid #D4D4D4;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #ffffff;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            column-gap: 7px;
+
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 15px;
+
+        a {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            &:hover{
+                color: #D4D4D4;
+            }
+        }
+    }
+
+    .auth_area {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 6px;
+        a {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            background: #0E3868;
+            padding: 10px 16px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            &:hover{
+                background: #061f3b;
+            }
+        }
+    }
+}
