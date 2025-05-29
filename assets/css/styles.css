@@ -52,6 +52,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 .header_wrapper {
   padding: 29px 0;
   background: #0E3868;
@@ -93,7 +98,7 @@ a {
   height: 24px;
   width: 24px;
 }
-.header_wrapper nav {
+.header_wrapper header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,7 +112,7 @@ a {
      -moz-column-gap: 15px;
           column-gap: 15px;
 }
-.header_wrapper nav a {
+.header_wrapper header nav a {
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
@@ -118,10 +123,25 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header_wrapper nav a:hover {
+.header_wrapper header nav a:hover {
   color: #D4D4D4;
 }
-.header_wrapper .auth_area {
+.header_wrapper header nav .moreBtn {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header_wrapper header nav .moreBtn:hover {
+  color: #D4D4D4;
+}
+.header_wrapper header .auth_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +155,7 @@ a {
      -moz-column-gap: 6px;
           column-gap: 6px;
 }
-.header_wrapper .auth_area a {
+.header_wrapper header .auth_area a {
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
@@ -150,6 +170,15 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.header_wrapper .auth_area a:hover {
+.header_wrapper header .auth_area a:hover {
   background: #061f3b;
+}
+
+@media (max-width: 1440px) {
+  .header_wrapper header nav .moreBtn {
+    display: block;
+  }
+  .header_wrapper header nav a:last-child {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

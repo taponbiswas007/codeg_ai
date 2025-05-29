@@ -26,9 +26,7 @@
                 width: 24px;
             }
         }
-    }
-
-    nav {
+        nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -42,6 +40,21 @@
             letter-spacing: 0%;
             vertical-align: middle;
             color: #ffffff;
+            transition: all 0.3s ease;
+            &:hover{
+                color: #D4D4D4;
+            }
+           
+        }
+        .moreBtn {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #ffffff;
+            display: none;
             transition: all 0.3s ease;
             &:hover{
                 color: #D4D4D4;
@@ -72,4 +85,15 @@
             }
         }
     }
+    }
+
+    
+}
+@media (max-width: 1440px) {
+    .header_wrapper header nav .moreBtn{
+        display: block;
+    }
+     .header_wrapper header nav a:last-child{
+        display: none;
+     }
 }
