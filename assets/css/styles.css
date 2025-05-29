@@ -156,6 +156,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 20px;
 }
 
 .header_wrapper {
@@ -415,6 +416,77 @@ button {
   margin: 0 auto;
   margin-top: 10px;
 }
+.main_content_area .codegSpeciality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px auto;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 48px;
+}
+.main_content_area .codegSpeciality .spItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main_content_area .codegSpeciality .spItem img {
+  width: 20px;
+  height: 20px;
+}
+.main_content_area .codegSpeciality .spItem h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 14.78px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.main_content_area .codegSpeciality .spItem h3 {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 9.85px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.main_content_area .getstarted {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2588235294);
+          box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2588235294);
+  background: #0E3868;
+  border: 1px solid #FFFFFF;
+  padding: 10px 23px;
+  border-radius: 30px;
+}
 
 footer {
   padding-bottom: 20px;
@@ -528,5 +600,10 @@ footer ul li a {
   }
   .header_wrapper header .auth_area a {
     display: none;
+  }
+}
+@media (max-width: 374px) {
+  .main_content_area h1 {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
