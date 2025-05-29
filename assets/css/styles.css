@@ -374,6 +374,9 @@ button {
   display: none;
 }
 
+.main_content_area {
+  width: 100%;
+}
 .main_content_area .welcome_text {
   font-family: Inter;
   font-weight: 700;
@@ -494,6 +497,7 @@ button {
   padding: 30px 16px;
   width: 316px;
   border-radius: 10px;
+  margin: 20px auto;
 }
 .authform_area h1 {
   font-family: Inter;
@@ -588,6 +592,34 @@ button {
   margin: 20px auto;
   padding: 8px;
   border-radius: 7px 4px 7px 4px;
+}
+
+.searchinput {
+  position: relative;
+  margin-top: 25px;
+}
+.searchinput input {
+  color: #FFFFFF;
+  background: #001E40;
+  border-radius: 7px;
+  height: 51px;
+  width: 700px;
+  padding: 7px 10px 7px 40px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14.78px;
+  line-height: 19.07px;
+  letter-spacing: 0%;
+  text-align: left;
+  vertical-align: middle;
+}
+.searchinput .search_icon {
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+  position: absolute;
 }
 
 footer {
@@ -694,6 +726,16 @@ footer ul li a {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .searchinput input {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .searchinput input {
+    width: 390px;
+  }
+}
 @media (max-width: 420px) {
   .header_wrapper header .resauth_area {
     display: -webkit-box;
@@ -702,6 +744,9 @@ footer ul li a {
   }
   .header_wrapper header .auth_area a {
     display: none;
+  }
+  .searchinput input {
+    width: 100%;
   }
 }
 @media (max-width: 374px) {
