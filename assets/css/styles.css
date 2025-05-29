@@ -534,6 +534,7 @@ button {
 .input_feild {
   width: 100%;
   margin-top: 20px;
+  position: relative;
 }
 .input_feild label {
   font-family: Inter;
@@ -558,6 +559,19 @@ button {
   vertical-align: middle;
   color: #ffffff;
   color: #FFFFFF;
+}
+.input_feild .showpassword_look_area {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+}
+.input_feild .showpassword_look_area span {
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.input_feild .showpassword_look_area .passshow {
+  display: none;
 }
 
 .commonbtn {

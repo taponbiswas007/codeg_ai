@@ -347,7 +347,7 @@
 .input_feild {
     width: 100%;
     margin-top: 20px;
-
+    position: relative;
     label {
         font-family: Inter;
         font-weight: 400;
@@ -373,6 +373,19 @@
         color: #ffffff;
         color: #FFFFFF;
 
+    }
+    .showpassword_look_area{
+        position: absolute;
+        right: 10px;
+        bottom: 8px;
+        span{
+            color: #ffffff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .passshow{
+            display: none;
+        }
     }
 }
 

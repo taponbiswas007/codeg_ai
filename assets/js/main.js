@@ -1,25 +1,35 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Elements we're working with
     var $moreBtn = $('.moreBtn');
     var $dropdownMenu = $('.dropdown-menu');
-    
+
     // Show dropdown when hovering either button or menu
     $moreBtn.add($dropdownMenu).hover(
-        function() {
+        function () {
             $dropdownMenu.addClass('show');
         },
-        function() {
+        function () {
             // Hide when mouse leaves both button and menu
             // Use setTimeout to allow time to check if mouse moved to the other element
-            setTimeout(function() {
+            setTimeout(function () {
                 if (!$moreBtn.is(':hover') && !$dropdownMenu.is(':hover')) {
                     $dropdownMenu.removeClass('show');
                 }
             }, 50);
         }
     );
-    $('.togglebtn').click(function(){
+    $('.togglebtn').click(function () {
         $('.header_wrapper header nav').toggleClass('menushow')
         $('.menuOpen , .menuClose').toggle()
-    }) 
+    });
+    $('.passhide').click(function () {
+        $('.passshow').show();
+        $(this).hide();
+        $('.password_Input').attr('type', 'text');
+    });
+    $('.passshow').click(function () {
+        $('.passhide').show();
+        $(this).hide();
+        $('.password_Input').attr('type', 'password');
+    });
 });
